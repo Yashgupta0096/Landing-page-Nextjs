@@ -17,7 +17,12 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "rimraf": "^3.0.2",
+    "inflight": "^1.0.6",
+    "@humanwhocodes/config-array": "^0.11.14",
+    "glob": "^7.2.3",
+    "@humanwhocodes/object-schema": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",
