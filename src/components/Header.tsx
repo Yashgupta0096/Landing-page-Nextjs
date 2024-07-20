@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const Header = () => {
@@ -17,9 +18,17 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0">
+      <div className="flex justify-center">
+      <motion.div
+        className="flex-shrink-0"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        whileHover={{ scale: 1.1 }}
+      >
         <Image src="/assets/head1.png" alt="App preview" width={300} height={600} />
-      </div>
+      </motion.div>
+    </div>
     </div>
   );
 };
